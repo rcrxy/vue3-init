@@ -1,0 +1,35 @@
+module.exports = {
+   env: {
+      browser: true,
+      es2021: true,
+   },
+   extends: [
+      "eslint:recommended",
+      "plugin:vue/vue3-essential",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:prettier/recommended",
+   ],
+   overrides: [],
+   parser: "@typescript-eslint/parser",
+   parserOptions: {
+      ecmaVersion: "latest",
+      sourceType: "module",
+   },
+   plugins: ["vue", "@typescript-eslint"],
+   rules: {
+      "prettier/prettier": "error",
+      quotes: ["error", "double", { allowTemplateLiterals: true }],
+      "no-console": 0,
+      "no-compare-neg-zero": 0,
+      "no-duplicate-case": 0,
+      "vue/max-attributes-per-line": ["error", { singleline: { max: 5 }, multiline: { max: 2 } }],
+      "vue/no-multiple-template-root": 0,
+      "vue/multi-word-component-names": 0,
+      "vue/attribute-hyphenation": 0,
+      "vue/valid-v-for": 0,
+      "vue/require-v-for-key": 0,
+      "vue/no-v-model-argument": 0,
+      "vue/v-on-event-hyphenation": 0,
+      "array-element-newline": ["error", "consistent"],
+   },
+};

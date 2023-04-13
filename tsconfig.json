@@ -1,0 +1,27 @@
+{
+   "compilerOptions": {
+      "target": "ESNext",
+      "useDefineForClassFields": true,
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "strict": true,
+      "jsx": "preserve",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "noEmit": true,
+      "composite": true,
+      "allowSyntheticDefaultImports": true,
+      "lib": ["esnext", "dom", "WebWorker", "DOM"],
+      "baseUrl": "./",
+      "paths": {
+         "@/*": ["./src/*"],
+         "@img/*": ["./src/assets/images/*"],
+         "@views/*": ["./src/views/*"],
+         "@service/*": ["./src/service/*"]
+      }
+      // "typeRoots": ["./node_modules/@types", "./src/types"]
+   },
+   "include": ["src/**/*.*", "vite.config.ts"]
+}
