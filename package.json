@@ -5,14 +5,16 @@
    "type": "module",
    "description": "vue3+TS+VITE+element plus+pinia+mitt",
    "scripts": {
-      "dev": "vite",
-      "build": "vue-tsc && vite build",
+      "dev": "dotenv -e .env.development vite",
+      "build:pro": "dotenv -e .env.production vue-tsc && vite build",
+      "build:test": "dotenv -e .env.development vue-tsc && vite build",
       "preview": "vite preview"
    },
    "dependencies": {
       "@element-plus/icons-vue": "^2.1.0",
       "axios": "^1.3.5",
       "dayjs": "^1.11.7",
+      "dotenv": "^16.0.3",
       "element-plus": "^2.3.2",
       "mitt": "^3.0.0",
       "normalize.css": "^8.0.1",
