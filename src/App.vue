@@ -1,13 +1,4 @@
-<script setup lang="ts">
-import mainStore from "./store";
-import { computed } from "vue";
-
-const store = mainStore();
-
-const aa = computed(() => store.getStoreItem(["nowMajorIndex", "nowPath"]));
-
-console.log("nowIndex", aa);
-</script>
+<script setup lang="ts"></script>
 
 <template>
    <router-view v-slot="{ Component }">
